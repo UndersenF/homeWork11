@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-
 public class Main {
     public static void main(String[] args) {
 //       task1
@@ -9,11 +7,11 @@ public class Main {
 //        task2
         int clientOS =  1;
         int clientDeviceYear = 2014;
-        determinateVersionOS(clientOS, clientDeviceYear);
+        determineVersionOS(clientOS, clientDeviceYear);
 
 //         task3
         int deliveryDistance = 45;
-        determinateTimeOfDelivery(deliveryDistance);
+        determineTimeOfDelivery(deliveryDistance);
     }
 
 
@@ -34,7 +32,7 @@ public class Main {
     }
 
 //    Метод для task2
-    public static void determinateVersionOS (int clientOS, int clientDeviceYear ) {
+    public static void determineVersionOS(int clientOS, int clientDeviceYear ) {
         int actualYear = 2015;
         if (clientOS == 0 && clientDeviceYear < actualYear) {
             System.out.println("Установите облегченную версию приложения iOS по ссылке.");
@@ -53,7 +51,7 @@ public class Main {
 
 //    Метод для task3
 
-    public static void determinateTimeOfDelivery(int deliveryDistance) {
+    public static void determineTimeOfDelivery(int deliveryDistance) {
         int timeOfDelivery = 1;
         if (deliveryDistance <= 20) {
             System.out.println(" Потребуется дней : " + timeOfDelivery);
