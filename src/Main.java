@@ -4,11 +4,11 @@ public class Main {
     public static void main(String[] args) {
 //       task1
         int year = 3600;
-        determinateYear(year);
+        determineYear(year);
 
 //        task2
         int clientOS =  1;
-        int clientDeviceYear = 2023;
+        int clientDeviceYear = 2014;
         determinateVersionOS(clientOS, clientDeviceYear);
 
 //         task3
@@ -18,7 +18,7 @@ public class Main {
 
 
 //    Метод для task1
-    public static void determinateYear(int year) {
+    public static void determineYear(int year) {
         if (year % 400 == 0 && year >= 1584) {
             System.out.printf("%s год является високосным!\n", year);
         }
@@ -35,15 +35,15 @@ public class Main {
 
 //    Метод для task2
     public static void determinateVersionOS (int clientOS, int clientDeviceYear ) {
-        int nowYear = LocalDate.now().getYear();
-        if (clientOS == 0 && clientDeviceYear < nowYear) {
+        int actualYear = 2015;
+        if (clientOS == 0 && clientDeviceYear < actualYear) {
             System.out.println("Установите облегченную версию приложения iOS по ссылке.");
         }
         else if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
 
-        if (clientOS == 1 && clientDeviceYear < nowYear) {
+        if (clientOS == 1 && clientDeviceYear < actualYear) {
             System.out.println("Установите облегченную версию приложения Android по ссылке.");
         }
         else if (clientOS == 1) {
